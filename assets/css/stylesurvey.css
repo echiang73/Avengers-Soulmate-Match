@@ -1,0 +1,30 @@
+body{
+    background-image: url(../../assets/images/background6.jpg);
+    background-attachment: fixed;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-color:black;
+    color: yellow;
+}
+
+#logoText2{
+    font-size: 40px;
+    background: -webkit-linear-gradient(right, blue, red);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.container{
+    padding: 20px 0px 20px 0px;
+    /* background: rgba(0, 0, 0, 0); */
+}
+.wrapper{
+    padding: 250px 0px 00px 0px;
+}
+h3, h4{
+    color: yellow;
+}
+.btn-primary {
+    padding-top: 16px;
+}
+

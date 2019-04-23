@@ -1,0 +1,28 @@
+body{
+    background-image: url(../../assets/images/background3.jpg);
+    background-attachment: fixed;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-color:black;
+}
+
+#logoText{
+    font-size: 40px;
+    /* color: yellow; */
+    /* font-size: 72px; */
+    background: -webkit-linear-gradient(right, blue, red);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.jumbotron{
+    padding: 100px 575px 20px 0px;
+    background: rgba(0, 0, 0, 0);
+}
+h4{
+    color: white;
+}
+.btn-primary {
+    padding-top: 16px;
+}
+
