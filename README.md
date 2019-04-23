@@ -3,19 +3,16 @@ Avengers Super heroes Soulmate Finder: Full-Stack Site using Node and Express Se
 
 
 ## Overview
-Marvel Cinematic Universe super heroes are powerful defenders of all things good. They could even be our soulmates.  In honor of Marvel Studios’ Avengers: Endgame opening in theaters on April 22, you might be wondering which super hero is right for you. You’re about to find out!
+Marvel Cinematic Universe super heroes are powerful defenders of all things good. They could even be our soulmates.  In honor of Marvel Studios’ Avengers: Endgame opening in theaters on April 22, you might be wondering which super hero is right for you. You’re about to find out! This full- stack site will take in your results from the 10-question survey, then compare their answers with those from one of the Avengers Super Heroes or other "Super" Users. The app will then display the name and picture of the Super Hero or "Super" User with the best overall match.
+
+This full-stack application incorporates both front-end and back-end languages and frameworks, as well as in server, network and hosting environments. Express.js, a server framework for Node.js, is used to handle routing.  To run the server codes, the app is deployed live on Heroku.
 
 
-
-This application implements a CLI based Storefront for the retail company "Bamazon".  The app has 3 interfaces: one for the **customer**, one for the **manager**, and one for the **supervisor**.  The app will allow: 1) a customer to place orders; 2) a manager to add new products or update inventory; 3) a supervisor to view sales and profit.  Beyond the proposed levels of challenges, several more features are added to make the app more functional for real-world use as described below. The app uses Node.js and npm inquirer package to execute prompt-directed commands with the backend MySQL database of the product inventory to retrieve and display information.
-
-## How to Run Bamazon:
+## How to Run App:
 
 1. Clone down repository.
 2. Navigate to the root of your project and run `npm install` to install the required versions of third party npm packages as instructed in the `package.json` file.
-3. Note that this app will only work if you provide the MySQL connection password in the `keys.js` file or password on line 14 of `bamazon.js`.
-4. Create the database in MySQL by opening and executing the schema.sql file.  Once the products table is created, import the product information from the products.csv file.  Once the departments table is created, execute the seeds.sql to insert the department data into the table.
-5. Run command `node bamazon.js`.  Note that the original intent to use 3 js files `bamazonCustomer.js`, `bamazonManager.js`, `bamazonSupervisor.js` have all been merged into a single js file with shared codes.
+5. Run command `node server.js` and then click on localhost port.
 
 
 ## Detail Instructions:
@@ -25,31 +22,19 @@ This application implements a CLI based Storefront for the retail company "Bamaz
 
 2. Option 2 for Manager Interface: :spiral_notepad: :writing_hand:
      
-   The **Manager** interface allows the user/manager to view list of products for sale or with low inventory as well as to add to inventory or add new products. The manager will be presented with a set of menu options:
-
-    * View Products for Sale - Display a list of very available item with: item ID, names, description, prices, and quantities.
-    * View Low Inventory - Display all itmes with an inventory count lower than five.
-    * Add to Inventory - Prompt manager to add more of any item currently in store.
-    * Add New Product - Prompt manager to add a completely new product to the store.
-    * Delete Product - Prompt manager to delete any product from the store.
-
-3. Option 3 for Supervisor Interface: :chart_with_upwards_trend: :dollar:
-     
-   The **Supervisor** interface allows the user/supervisor to view list of product sales by Department as well as to create new Department for the store. The supervisor will be presented with a set of menu options:
-
-    * View Product Sales by Department - Display a summarized table with overhead cost, product sales, and the calculated total profit for each Department.
-    * Create New Department - Prompt supervisor to create a completely new Department for the store.
-    * Delete Department - Prompt supervisor to delete any Department from the store.
-    * View Exisitng Department and/or Change Over Head Costs - Display all Departments including newly created without products as well as prompt supervisor to change the over head costs for any Department in the store.
 
 
 ## Built with:
+* HTML5
+* CSS3
 * JavaScript
+* jQuery
 * Node.js
 * Node Package Manager (npm)
-* MySQL
 
 ## npm packages: 
+* [Express] (https://www.npmjs.com/package/express) - Fast, unopinionated, minimalist web framework for node to handle routing.
+
 * [Inquirer.js](https://www.npmjs.com/package/inquirer) - A collection of common interactive command line user interfaces to provide inquiry session flow. :question: :speech_balloon:
 * [mysql](https://www.npmjs.com/package/mysql) - A node.js driver for mysql, written in JavaScript, to interface with MySQL databases.
 * [CLI-Table](https://www.npmjs.com/package/cli-table) - A utility to render unicode-aided tables on the command line from the node.js scripts.
@@ -57,10 +42,13 @@ This application implements a CLI based Storefront for the retail company "Bamaz
 * [DotEnv](https://www.npmjs.com/package/dotenv) - Dotenv store your sensitive credentials and load in environment variables in .env file to merge into your process.env runtime variables. :closed_lock_with_key:
 
 
+
 ## Author
 * Eddie Chiang
 * Click on the GitHub link!
-https://github.com/echiang73/Bamazon
+https://github.com/echiang73/Avengers-Soulmate-Match
+* Click on the deployed app on Heroku!
+https://heroku.com/echiang73/Avengers-Soulmate-Match -----------------
 
 
 ## Here are the previews of the node application:
