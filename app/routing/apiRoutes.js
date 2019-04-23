@@ -4,7 +4,7 @@
 // These data sources hold arrays of information on table-data, waitinglist, etc.
 // ===============================================================================
 
-var superheroesData = require("../data/tableData");
+var superheroesData = require("../data/superheroesData");
 
 // ROUTING
 
