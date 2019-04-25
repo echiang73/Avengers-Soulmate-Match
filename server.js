@@ -1,6 +1,5 @@
 var express = require("express");
 var path = require("path");
-// var bodyParser = require('body-parser');
 var app = express();
 
 var PORT = process.env.PORT || 8080;
@@ -8,6 +7,8 @@ var PORT = process.env.PORT || 8080;
 // Sets up the Express app to handle data parsing
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
+// app.use(express.static(path.join(__dirname, 'public'))); // In order to load static files onto server like style.css
+// app.use('/content', express.static(path.join(__dirname, 'public'))); // To create the virtual path prefix
 
 // ROUTER - The below points our server to a series of "route" files.
 // These routes give our server a "map" of how to respond when users visit or request data from various URLs.
