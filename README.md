@@ -24,10 +24,10 @@ This full-stack application incorporates both front-end and back-end languages a
 
 ## Author
 * Eddie Chiang
-* Click on the GitHub link!
-https://github.com/echiang73/Avengers-Soulmate-Match
 * Click on the deployed app on Heroku!
-https://heroku.com/echiang73/Avengers-Soulmate-Match -----------------
+https://vast-peak-24032.herokuapp.com/
+* Click on the GitHub link to view code!
+https://github.com/echiang73/Avengers-Soulmate-Match
 
 
 ## Here are the previews of the node application:
