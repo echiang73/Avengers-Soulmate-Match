@@ -176,7 +176,7 @@
                     <h2 id="match-name"></h2>
                     <h2 id="match-alias"></h2>
                     <img id="match-img"
-                        src="https://image.tmdb.org/t/p/w342//dHjLaIUHXcMBt7YxK1TKWK1end9.jpg" alt="">
+                        src="https://image.tmdb.org/t/p/w342//dHjLaIUHXcMBt7YxK1TKWK1end9.jpg" alt="" width="300px">
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -225,7 +225,6 @@
                         isValid = false;
                     }
                 });
-                alert("Thank you for your submission!");
                 return isValid;
             }
 
@@ -249,9 +248,16 @@
                         $("#q10").val()
                     ]
                 };
+                alert("Thank you for your submission!");
 
-                // AJAX post the data to the friends API.
-                $.post("/api/superheroes", userData, function (data) {
+                // AJAX post the data to the superheroes API.
+                $.post("/api/superheroes", userData, function (data) { // instead of userData
+
+                    // Empty out modal, username and link fields.
+                    // $("#modalContent").empty();
+                    // $("#user-name").val("");
+                    // $("#superhero-name").val("");
+                    // $("#userPhoto").val("");
 
                     // Grab the result from the AJAX post so that the best match's name, alias, and photo are displayed.
                     $("#match-name").text(data.userName);
