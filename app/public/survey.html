@@ -173,10 +173,11 @@
                     <h2 class="modal-title"><strong>Best Match</strong></h2>
                 </div>
                 <div class="modal-body">
-                    <h2 id="match-name"></h2>
+                    <!-- <h2 id="match-name"></h2>
                     <h2 id="match-alias"></h2>
                     <img id="match-img"
-                        src="https://image.tmdb.org/t/p/w342//dHjLaIUHXcMBt7YxK1TKWK1end9.jpg" alt="" width="300px">
+                        src="https://image.tmdb.org/t/p/w342//dHjLaIUHXcMBt7YxK1TKWK1end9.jpg" alt="" width="300px"> -->
+                    <p>You have a match!</p>
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -251,8 +252,11 @@
                 alert("Thank you for your submission!");
 
                 // AJAX post the data to the superheroes API.
-                $.post("/api/superheroes", userData, function (data) { // instead of userData
-
+                $.post("/api/superheroes", userData, function (data) {
+                    // console.log(data);
+                    if (data) {
+                        alert("Yay! Modal is potentially working!"); // Test it, doesn't seem to work.
+                    }
                     // Empty out modal, username and link fields.
                     // $("#modalContent").empty();
                     // $("#user-name").val("");
@@ -260,18 +264,52 @@
                     // $("#userPhoto").val("");
 
                     // Grab the result from the AJAX post so that the best match's name, alias, and photo are displayed.
-                    $("#match-name").text(data.userName);
-                    $("#match-alias").text(data.superHeroName);
-                    $("#match-img").attr("src", data.userPhoto);
+                    // $("#match-name").text(data.userName);
+                    // $("#match-alias").text(data.superHeroName);
+                    // $("#match-img").attr("src", data.userPhoto);
 
-                    // Show the modal with the best match
-                    $("#results-modal").modal("toggle");
-
+                    // // Show the modal with the best match
+                    // $("#results-modal").modal("toggle");
+                    // runModal();
                 });
             } else {
                 alert("Please fill out all fields before submitting!");
             }
         });
+
+    // function runModal() {
+    //     $.ajax({ url: "/api/superheroes", method: "GET" })
+    //     .then(function(bestMatches) {
+
+    //     // Here we then log the waitlistData to console, where it will show up as an object.
+    //     console.log(bestMatches);
+    //     console.log("------------------------------------");
+
+    //     // Loop through and display each of the customers
+    //     // for (var i = 0; i < waitData.length; i++) {
+
+    //     //   // Get a reference to the waitList element and populate it with tables
+    //     //   var waitList = $("#waitList");
+
+    //     //   // Then display the fields in the HTML (Section Name, Date, URL)
+    //     //   var listItem = $("<li class='list-group-item mt-4'>");
+
+    //     //   listItem.append(
+    //     //     $("<h2>").text("Table #" + (i + 1)),
+    //     //     $("<hr>"),
+    //     //     $("<h2>").text("ID: " + waitData[i].customerID),
+    //     //     $("<h2>").text("Name: " + waitData[i].customerName),
+    //     //     $("<h2>").text("Email: " + waitData[i].customerEmail),
+    //     //     $("<h2>").text("Phone: " + waitData[i].phoneNumber)
+    //     //   );
+
+    //     //   waitList.append(listItem);
+    //     // }
+    //   });
+    // }
     </script>
+ 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
 </body>
 </html>
