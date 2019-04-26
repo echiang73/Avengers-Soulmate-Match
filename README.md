@@ -30,18 +30,8 @@ https://vast-peak-24032.herokuapp.com/
 https://github.com/echiang73/Avengers-Soulmate-Match
 
 
-## Here are the previews of the node application:
-
-Customer Interface:
+## Here is the preview of the web application:
 
 ![](nodepreview1.gif "gif")
 
-
-Manager Interface:
-
-![](nodepreview2.gif "gif")
-
-
-Supervisor Interface:
-
-![](nodepreview3.gif "gif")
+![](app/public/assets/images/webpreview.png "png")
