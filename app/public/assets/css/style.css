@@ -9,8 +9,6 @@ body{
 
 #logoText{
     font-size: 40px;
-    /* color: yellow; */
-    /* font-size: 72px; */
     background: -webkit-linear-gradient(right, blue, red);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -25,4 +23,44 @@ h4{
 .btn-primary {
     padding-top: 16px;
 }
+.footer{
+    color:#007bff;
+}
 
+/* Medium devices (landscape tablet, 1080px) */
+@media only screen and (max-width: 991px) {
+    body{
+        background-image: url("../../assets/images/background3.2.jpg");
+        background-attachment: fixed;
+        background-position: top;
+        background-repeat: no-repeat;
+    }
+    .jumbotron{
+        padding: 20px 0px 20px 0px;
+    }
+  } 
+
+/* Small devices (portrait phone, 520px) */
+@media only screen and (max-width: 531px) {
+    .jumbotron{
+        padding: 20px 0px 0px 0px;
+    }
+    #logoText{
+        font-size: 28px;
+    }
+    h4, h5{
+        font-size: 20px;
+    }
+    .btn-primary {
+        padding: 8px 8px 4px 8px;
+    }
+    /* body{
+        /* background-image: url("../../assets/images/background3.2.jpg"); */
+    }
+    .fullTitle{
+        font-size: 40px;
+    }
+    #instructions{
+        font-size: 14px;
+    } */
+  } 
