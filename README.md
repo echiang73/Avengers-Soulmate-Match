@@ -16,6 +16,7 @@ This full-stack application incorporates both front-end and back-end languages a
 * Node.js
 * Node Package Manager (npm)
 * Chosen (http://harvesthq.github.io/chosen/) - jQuery plugin/library for making long, unwieldy select boxes more friendly. 
+* Media queries
 
 ## npm packages: 
 * [Express] (https://www.npmjs.com/package/express) - Fast, unopinionated, minimalist web framework for node to handle routing.
