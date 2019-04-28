@@ -36,7 +36,19 @@ h4{
         background-repeat: no-repeat;
     }
     .jumbotron{
-        padding: 20px 0px 20px 0px;
+        padding: 10px 0px 0px 0px;
+    }
+    #logoText{
+        font-size: 46px;
+    }
+    h4, h5{
+        font-size: 28px;
+    }
+    .btn-primary {
+        padding: 8px 8px 4px 8px;
+    }
+    .footer{
+        font-size: 26px
     }
   } 
 
