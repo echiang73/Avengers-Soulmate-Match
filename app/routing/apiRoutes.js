@@ -52,10 +52,12 @@ module.exports = function (app) {
     console.log("Mim Diff: " + minimumDifference);
 
     for (var i = 0; i < bestMatches.length; i++) {
-      console.log("Best Match(s): " + bestMatches[i].userName);
+      console.log("Best Match(s): " + bestMatches[i].superHeroName);
     }
 
     // Once you're done comparing, add the new user to the potential friends data.
     superheroesData.push(thisUser);
+
+    res.json(bestMatches);
   });
 };
