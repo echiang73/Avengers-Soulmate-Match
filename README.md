@@ -31,10 +31,10 @@ https://vast-peak-24032.herokuapp.com/
 https://github.com/echiang73/Avengers-Soulmate-Match
 
 
-## Here is the preview of the web application:
-
-![](nodepreview1.gif "gif")
+## Here are the previews of the web application:
 
 ![](app/public/assets/images/webpreview.png "png")
 
-![](app/public/assets/images/webpreview2.png "png")
+![](app/public/assets/images/webpreview1.gif "gif")
+
+![](app/public/assets/images/webpreview2.gif "gif")
