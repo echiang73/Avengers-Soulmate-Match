@@ -254,10 +254,7 @@
                 // AJAX post the data to the superheroes API.
                 $.post("/api/superheroes", userData, function (data) {
                     console.log(data);
-                    // if (data) {
-                    //     alert("Yay! Modal is potentially working!");
-                    // }
-
+                    
                     if(data.length >1){
                         var index =Math.floor(Math.random()*data.length);
                     }
