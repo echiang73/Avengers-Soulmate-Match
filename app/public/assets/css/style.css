@@ -46,21 +46,12 @@ h4{
         padding: 20px 0px 0px 0px;
     }
     #logoText{
-        font-size: 28px;
+        /* font-size: 28px; */
     }
     h4, h5{
-        font-size: 20px;
+        /* font-size: 20px; */
     }
     .btn-primary {
         padding: 8px 8px 4px 8px;
     }
-    /* body{
-        /* background-image: url("../../assets/images/background3.2.jpg"); */
-    }
-    .fullTitle{
-        font-size: 40px;
-    }
-    #instructions{
-        font-size: 14px;
-    } */
   } 
