@@ -45,3 +45,10 @@ h3, h4{
     margin-right: auto;
     color: white;
 }
+
+/* Medium devices (landscape tablet, 1080px) */
+@media only screen and (max-width: 1080px) {
+    body{
+        background-image: url("../../assets/images/background6.2.jpg");
+    }
+  } 

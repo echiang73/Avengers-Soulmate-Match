@@ -51,19 +51,3 @@ h4{
         font-size: 26px
     }
   } 
-
-/* Small devices (portrait phone, 520px) */
-@media only screen and (max-width: 531px) {
-    .jumbotron{
-        padding: 20px 0px 0px 0px;
-    }
-    #logoText{
-        /* font-size: 28px; */
-    }
-    h4, h5{
-        /* font-size: 20px; */
-    }
-    .btn-primary {
-        padding: 8px 8px 4px 8px;
-    }
-  } 
