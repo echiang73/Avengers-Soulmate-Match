@@ -33,8 +33,6 @@ https://github.com/echiang73/Avengers-Soulmate-Match
 
 ## Here are the previews of the web application:
 
-![](app/public/assets/images/webpreview.png "png")
-
 ![](app/public/assets/images/webpreview1.gif "gif")
 
 ![](app/public/assets/images/webpreview2.gif "gif")
